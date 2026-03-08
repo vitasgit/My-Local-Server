@@ -1,0 +1,46 @@
+  </div><!-- .table-wrapper -->
+  <div class="footer-bar">
+    <span>Powered by Apache &mdash; Styled with Claude, 2026</span>
+  </div>
+</div><!-- .container -->
+
+<script>
+/* ── Dark / Light Theme ── */
+function toggleTheme() {
+  const html = document.documentElement;
+  const current = html.getAttribute('data-theme');
+  const next = current === 'dark' ? 'light' : 'dark';
+  html.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
+}
+(function() {
+  const saved = localStorage.getItem('theme') ||
+    (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', saved);
+})();
+
+/* ── Поиск / Фильтр ── */
+(function() {
+  const wrapper = document.querySelector('.table-wrapper');
+  const table = wrapper && wrapper.querySelector('table');
+  if (!table) return;
+
+  const search = document.createElement('input');
+  search.type = 'text';
+  search.placeholder = '🔍  Поиск файлов…';
+  search.className = 'search-input';
+  wrapper.insertBefore(search, table);
+
+  search.addEventListener('input', function() {
+    const val = this.value.toLowerCase();
+    const rows = table.querySelectorAll('tbody tr, tr');
+    rows.forEach((row, i) => {
+      if (i === 0) return; // header
+      const name = row.textContent.toLowerCase();
+      row.style.display = name.includes(val) ? '' : 'none';
+    });
+  });
+})();
+</script>
+</body>
+</html>
