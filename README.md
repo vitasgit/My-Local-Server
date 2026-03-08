@@ -7,7 +7,7 @@
 <!-- скриншоты -->
 | Light Mode | Dark Mode |
 |:---:|:---:|
-| ![Light Theme](screenshots/light.png) | ![Dark Theme](screenshots/dark.png) |
+| ![Light Theme](main/screenshots/light.png) | ![Dark Theme](main/screenshots/dark.png) |
 
 </div>
 
