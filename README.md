@@ -41,6 +41,7 @@ sudo a2enmod autoindex dir mime
 sudo systemctl restart apache2
 
 <br>
+
 # Мои заметки:
 
 Если сервер апач уже настроен, то достаточно создать папку для общего доступа в соответствующей директории:
