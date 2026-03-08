@@ -39,6 +39,7 @@ sudo a2enmod autoindex dir mime
 
 # Перезапустить Apache
 sudo systemctl restart apache2
+```
 
 <br>
 
