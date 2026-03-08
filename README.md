@@ -12,11 +12,6 @@
 
 <br/>
 
-<!-- Замените на реальные скриншоты -->
-| Light Mode | Dark Mode |
-|:---:|:---:|
-| ![Light Theme](screenshots/light.png) | ![Dark Theme](screenshots/dark.png) |
-
 </div>
 
 ---
@@ -52,3 +47,6 @@ sudo a2enmod autoindex dir mime
 
 # Перезапустить Apache
 sudo systemctl restart apache2
+
+# Мои заметки:
+# 
