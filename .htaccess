@@ -1,0 +1,57 @@
+# Включаем mod_autoindex
+Options +Indexes +FollowSymLinks
+
+# Стили и шапка
+IndexStyleSheet "templates/style.css"
+HeaderName "templates/header.html"
+ReadmeName "templates/footer.html"
+
+# Настройки отображения
+IndexOptions +Charset=UTF-8
+IndexOptions +FancyIndexing
+IndexOptions +HTMLTable
+IndexOptions +FoldersFirst
+IndexOptions +IconsAreLinks
+IndexOptions +NameWidth=*
+IndexOptions +SuppressDescription
+IndexOptions +SuppressRules
+IndexOptions +IconWidth=16
+IndexOptions +IconHeight=16
+IndexOptions +XHTML
+
+# ═══════════════════════════════════════════════════
+# ИКОНКИ — используем AddIcon по РАСШИРЕНИЯМ
+# ═══════════════════════════════════════════════════
+
+# Спецобъекты
+AddIcon /myServer/templates/icons/folder.svg ^^DIRECTORY^^
+AddIcon /myServer/templates/icons/back.svg   ..
+
+# ── Изображения ──
+AddIcon /myServer/templates/icons/image.svg .png .jpg .jpeg .gif .bmp .svg .webp .ico .tiff .tif
+
+# ── Аудио ──
+AddIcon /myServer/templates/icons/audio.svg .mp3 .wav .flac .ogg .aac .wma .m4a .opus
+
+# ── Видео ──
+AddIcon /myServer/templates/icons/video.svg .mp4 .avi .mkv .mov .wmv .flv .webm .m4v .mpeg .mpg .3gp
+
+# ── Текст / Код ──
+AddIcon /myServer/templates/icons/text.svg .txt .md .log .csv .json .xml .yaml .yml .ini .cfg .conf .toml
+
+# ── Архивы ──
+AddIcon /myServer/templates/icons/archive.svg .zip .tar .gz .bz2 .xz .rar .7z .tgz .tar.gz
+
+# ── Код / Скрипты ──
+AddIcon /myServer/templates/icons/code.svg .html .htm .css .js .ts .py .php .sh .bash .c .cpp .h .java .go .rs .rb .pl .sql
+
+# ── Документы ──
+AddIcon /myServer/templates/icons/document.svg .pdf .doc .docx .xls .xlsx .ppt .pptx .odt .ods .odp .rtf
+
+# ── Исполняемые ──
+AddIcon /myServer/templates/icons/binary.svg .exe .bin .deb .rpm .dmg .iso .img .apk
+
+# ═══════════════════════════════════════════════════
+# DefaultIcon — для ВСЕГО ОСТАЛЬНОГО (вместо AddIcon ... *)
+# ═══════════════════════════════════════════════════
+DefaultIcon /myServer/templates/icons/file.svg
