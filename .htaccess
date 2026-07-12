@@ -24,34 +24,34 @@ IndexOptions +XHTML
 # ═══════════════════════════════════════════════════
 
 # Спецобъекты
-AddIcon /myServer/templates/icons/folder.svg ^^DIRECTORY^^
-AddIcon /myServer/templates/icons/back.svg   ..
+AddIcon /server/templates/icons/folder.svg ^^DIRECTORY^^
+AddIcon /server/templates/icons/back.svg   ..
 
 # ── Изображения ──
-AddIcon /myServer/templates/icons/image.svg .png .jpg .jpeg .gif .bmp .svg .webp .ico .tiff .tif
+AddIcon /server/templates/icons/image.svg .png .jpg .jpeg .gif .bmp .svg .webp .ico .tiff .tif
 
 # ── Аудио ──
-AddIcon /myServer/templates/icons/audio.svg .mp3 .wav .flac .ogg .aac .wma .m4a .opus
+AddIcon /server/templates/icons/audio.svg .mp3 .wav .flac .ogg .aac .wma .m4a .opus
 
 # ── Видео ──
-AddIcon /myServer/templates/icons/video.svg .mp4 .avi .mkv .mov .wmv .flv .webm .m4v .mpeg .mpg .3gp
+AddIcon /server/templates/icons/video.svg .mp4 .avi .mkv .mov .wmv .flv .webm .m4v .mpeg .mpg .3gp
 
 # ── Текст / Код ──
-AddIcon /myServer/templates/icons/text.svg .txt .md .log .csv .json .xml .yaml .yml .ini .cfg .conf .toml
+AddIcon /server/templates/icons/text.svg .txt .md .log .csv .json .xml .yaml .yml .ini .cfg .conf .toml
 
 # ── Архивы ──
-AddIcon /myServer/templates/icons/archive.svg .zip .tar .gz .bz2 .xz .rar .7z .tgz .tar.gz
+AddIcon /server/templates/icons/archive.svg .zip .tar .gz .bz2 .xz .rar .7z .tgz .tar.gz
 
 # ── Код / Скрипты ──
-AddIcon /myServer/templates/icons/code.svg .html .htm .css .js .ts .py .php .sh .bash .c .cpp .h .java .go .rs .rb .pl .sql
+AddIcon /server/templates/icons/code.svg .html .htm .css .js .ts .py .php .sh .bash .c .cpp .h .java .go .rs .rb .pl .sql
 
 # ── Документы ──
-AddIcon /myServer/templates/icons/document.svg .pdf .doc .docx .xls .xlsx .ppt .pptx .odt .ods .odp .rtf
+AddIcon /server/templates/icons/document.svg .pdf .doc .docx .xls .xlsx .ppt .pptx .odt .ods .odp .rtf
 
 # ── Исполняемые ──
-AddIcon /myServer/templates/icons/binary.svg .exe .bin .deb .rpm .dmg .iso .img .apk
+AddIcon /server/templates/icons/binary.svg .exe .bin .deb .rpm .dmg .iso .img .apk
 
 # ═══════════════════════════════════════════════════
 # DefaultIcon — для ВСЕГО ОСТАЛЬНОГО (вместо AddIcon ... *)
 # ═══════════════════════════════════════════════════
-DefaultIcon /myServer/templates/icons/file.svg
+DefaultIcon /server/templates/icons/file.svg

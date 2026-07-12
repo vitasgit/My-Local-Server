@@ -94,6 +94,8 @@ sudo systemctl restart apache2 # Debian/Ubuntu
 
 ## Базовая настройка
 
+переименовал myServer --> server
+
 Если Apache уже настроен, достаточно создать папку для общего доступа:
 ```
 /var/www/html/myServer/
